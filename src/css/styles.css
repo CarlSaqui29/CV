@@ -110,9 +110,9 @@ body {
   font-family: "Wild";
   color: #3a88af;
   font-size: 28px;
-  position: absolute;
-  transform: translateY(1px);
-  margin-left: 8px;
+  display: inline-block;
+  transform: translateY(5.5px);
+  margin-left: 3px;
 }
 .container .row .col2 .fa-square {
   font-size: 6px;
@@ -154,4 +154,64 @@ body {
   font-size: 10px;
   border-radius: 30px;
   border: 1px solid #fc5858;
+}
+
+.mobileView {
+  display: none;
+  max-width: 500px;
+  text-align: center;
+}
+.mobileView img {
+  width: 120px;
+  border-radius: 100%;
+}
+.mobileView h2 {
+  margin-top: 20px;
+  color: #f0f6fc;
+}
+.mobileView p {
+  margin-top: 10px;
+  color: #6e7681;
+  font-size: 14px;
+}
+.mobileView .btn-download {
+  cursor: pointer;
+  background-color: #238636;
+  color: #fff;
+  text-decoration: none;
+  padding: 3px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 25px;
+}
+.mobileView .btn-download:hover {
+  transition: 0.2s ease-in-out;
+  background-color: #26a641;
+}
+.mobileView .socialMedia {
+  margin-top: 30px;
+}
+.mobileView .socialMedia a {
+  font-size: 25px;
+  margin: 5px;
+}
+.mobileView .socialMedia a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1439px) {
+  .container {
+    display: none;
+  }
+  .mobileView {
+    display: block;
+  }
+  body {
+    background-color: #0d1117 !important;
+    padding: 0 20px;
+    align-items: center;
+    margin-top: 120px;
+  }
 }/*# sourceMappingURL=styles.css.map */
