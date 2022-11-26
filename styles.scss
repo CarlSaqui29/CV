@@ -19,6 +19,7 @@ p,
 a {
   color: #626567;
 }
+
 body {
   background-color: #f7f9f9;
   display: flex;
@@ -27,24 +28,11 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
-.down {
-  background-color: rgba($color: #faeeeb, $alpha: 1) ;
-  color: #fc5858;
-  padding: 3px 10px;
-  position: relative;
-  top: -2px;
-  font-size: 10px;
-  border-radius: 30px;
-  border: 1px solid #fc5858;
-}
-
-.cont {
-  //background-image: url(images/bg.jpg);
-  //background-repeat: no-repeat;
+.container {
   background-color: #ffffff;
   width: 1300px;
   box-shadow: 80px 80px 80px rgba(19, 28, 34, 0.3);
-  .box {
+  .yellowBox {
     width: 120px;
     height: 150px;
     background-color: #f1c40f;
@@ -55,14 +43,27 @@ body {
   .row {
     display: flex;
     .col1 {
-      .left {
-        text-align: left;
-      }
+      flex: 30%;
+      padding: 30px;
+      text-align: center;
+      border-right: 1px solid rgba(121, 125, 127, 0.3);
       h2 {
         margin-top: 15px;
       }
+      img {
+        width: 150px;
+        border-radius: 100%;
+        box-shadow: 0 10px 50px rgba(66, 73, 73, 0.2);
+      }
+      p a{
+        text-decoration: none;
+        &:hover {text-decoration: underline;}
+      }
       .title {
         margin-bottom: 35px;
+      }
+      .left {
+        text-align: left;
       }
       .muted {
         text-transform: uppercase;
@@ -75,25 +76,8 @@ body {
         font-size: 6px;
         transform: translateY(-2px);
       }
-      flex: 30%;
-      padding: 30px;
-      text-align: center;
-      border-right: 1px solid rgba(121, 125, 127, 0.3);
-      img {
-        width: 150px;
-        border-radius: 100%;
-        box-shadow: 0 10px 50px rgba(66, 73, 73, 0.2);
-      }
-      p a{
-        text-decoration: none;
-        &:hover {text-decoration: underline;}
-      }
     }
     .col2 {
-      .fa-square {
-        font-size: 6px;
-        transform: translateY(-3.5px);
-      }
       flex: 70%;
       h1 {
         font-size: 115px;
@@ -116,6 +100,21 @@ body {
         margin-left: 40px;
         margin-bottom: 45px;
       }
+      h3 {
+        margin-top: 43px;
+        .wild {
+          font-family: "Wild";
+          color: #3a88af;
+          font-size: 28px;
+          position: absolute;
+          transform: translateY(1px);
+          margin-left: 8px;
+        }
+      }
+      .fa-square {
+        font-size: 6px;
+        transform: translateY(-3.5px);  
+      }
       .mar {
         margin-left: 40px;
         margin-top: -10px;
@@ -133,17 +132,6 @@ body {
         }
       }
     }
-    h3 {
-      margin-top: 43px;
-      .wild {
-        font-family: "Wild";
-        color: #3a88af;
-        font-size: 28px;
-        position: absolute;
-        transform: translateY(1px);
-        margin-left: 8px;
-      }
-    }
   }
   .bottom {
     text-align: center;
@@ -155,4 +143,15 @@ body {
       opacity: 70%;
     }
   }
+}
+
+.badge-danger {
+  background-color: rgba($color: #faeeeb, $alpha: 1) ;
+  color: #fc5858;
+  padding: 3px 10px;
+  position: relative;
+  top: -2px;
+  font-size: 10px;
+  border-radius: 30px;
+  border: 1px solid #fc5858;
 }
